@@ -1239,6 +1239,38 @@ video {
   padding-top: 20rem;
 }
 
+.pt-72 {
+  padding-top: 18rem;
+}
+
+.pt-64 {
+  padding-top: 16rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1550,6 +1582,10 @@ body {
 .group:focus .group-focus\:ring-white {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+
+:is(.dark .dark\:-z-10) {
+  z-index: -10;
 }
 
 :is(.dark .dark\:border-neutral-800) {

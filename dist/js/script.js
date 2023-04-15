@@ -47,8 +47,8 @@ window.onscroll = function () {
   });
   
   // pindahkan posisi toggle sesuai mode
-  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    darkToggle.checked = true;
-  } else {
+  if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
     darkToggle.checked = false;
+  } else {
+    darkToggle.checked = true;
   }
