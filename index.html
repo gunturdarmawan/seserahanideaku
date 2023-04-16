@@ -7,8 +7,8 @@
     <link href="/dist/output.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <title>Seserahanideaku</title>
     <script>
         if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
@@ -167,8 +167,8 @@
       <div class="w-full px-4">
         <div class="mx-auto mb-10 max-w-xl text-center">
           <h4 class="mb-2 text-lg font-semibold text-primary">Informasi</h4>
-          <h2 class="mb-2 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Tentang Seserahanideaku</h2>
-          <p class="text-md font-medium text-secondary md:text-lg"> </p>
+          <h2 class="mb-2 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Tentang Pemesanan</h2>
+          <p class="text-md font-medium text-secondary md:text-lg">Kami berkomitmen untuk memberikan pelayanan yang terbaik untuk setiap customer. </p>
         </div>
       </div>
   
@@ -191,12 +191,11 @@
             <div class="pt-5 pb-3 px-6">
               <h3>
                 <a href="#"
-                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">🛍️
-                  Pesanan</a>
+                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">🛍️Pemesanan</a>
               </h3>
               <p class="mb-2 text-base font-medium text-secondary">Promo start from 40k sewa + hias dengan berbagai pilihan tema hantaran</p>
  
-              <p class="mb-2 text-base font-semibold text-primary">Minimal 6 BOX</p> <!--- CUKUP ANGKA SAJA YANG DIGANTI -->
+              <p class="mb-2 text-base font-semibold text-primary">Tanpa Minimal Pemesanan </p> 
             </div>
           </div>
         </div>
@@ -205,11 +204,11 @@
             <div class="pt-5 pb-3 px-6">
               <h3>
                 <a href="#"
-                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">🎨 Tema Hantaran</a>
+                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">🎨 Paket Hantaran</a>
               </h3>
-              <p class="mb-2 text-base font-medium text-secondary">Saat ini terdapat 3 tema hantaran yang bisa kamu pilih sesuai dengan keinginan kamu</p>
+              <p class="mb-2 text-base font-medium text-secondary">Saat ini terdapat 4 paket hantaran yang bisa kamu pilih sesuai dengan keinginan kamu</p>
  
-              <p class="mb-2 text-base font-semibold text-primary">ELEGANT, MODERN & ROMANTIC</p> <!--- CUKUP ANGKA SAJA YANG DIGANTI -->
+              <p class="mb-2 text-base font-semibold text-primary">Premium, Special, Deluxe & Luxury</p> 
             </div>
           </div>
         </div>
@@ -219,46 +218,108 @@
  <!-- Informasi End -->
 
  
- 
-	<div id="app" class="max-w-screen-lg mx-auto md:px-8 py-12 transition-all duration-500 ease-linear">
+  <!-- Paket Section Start -->
+	<div id="app" class="max-w-screen-lg mx-auto md:px-8 py-12 dark:bg-dark transition-all duration-500 ease-linear">
 		<div class="w-full px-4">
       <div class="mx-auto mb-6 max-w-xl text-center">
         <h4 class="mb-3 text-lg font-semibold text-primary">Paket</h4>
         <h2 class="mb-2 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Pilihan Paket</h2>
-        <p class="px-4 text-md font-medium text-secondary md:text-lg">Kami Menghadirkan berbagai pilihan paket yang cocok untuk kamu</p>
+        <p class="px-6 text-md font-medium text-secondary md:text-lg">Kami menghadirkan berbagai pilihan paket yang cocok untuk kamu</p>
       </div>
     </div> 
-    
+
+    <!-- content -->
+     
 		<div class="relative">
 			<div class="slides-container h-96 flex snap-x snap-mandatory  overflow-x-auto space-x-4 scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
 				<div class="slide aspect-square w-72 h-full flex-shrink-0 snap-center rounded overflow-hidden">
-					<img class="w-full h-full object-cover" src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1600" alt="mountain_image">
+
+          <!-- Pricing Card -->
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"> 
+            <img class="rounded-t-lg " src="/dist/img/woodwait.jpg" alt="" /> 
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">Premium</h5>
+                </a>
+                <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">Tray Woodwhite with goldleaf.</p>
+                <div class=" ">
+                  <span class=" text-xl font-extrabold  dark:text-white">Rp.40.000</span>
+                  <span class=" text-gray-500 dark:text-gray-400">/Box</span>
+              </div>  
+            </div>
+          </div>
+          <!-- Pricing Card End -->
+
 				</div>
-				<div class="slide aspect-square w-72 h-full flex-shrink-0 snap-center rounded overflow-hidden">
-					<img class="w-full h-full object-cover" src="https://images.pexels.com/photos/6263568/pexels-photo-6263568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mountain_image">
+
+				<div class="slide aspect-square w-72 h-full flex-shrink-0 snap-center rounded overflow-hidden"> 
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"> 
+            <img class="rounded-t-lg " src="/dist/img/special.jpg" alt="" /> 
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">Special</h5>
+                </a>
+                <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">Romantic Lovebird Cage.</p>
+                <div class="pb-1">
+                  <span class=" text-xl font-extrabold  dark:text-white">Rp.45.000</span>
+                  <span class=" text-gray-500 dark:text-gray-400">/Box</span>
+              </div>  
+            </div>
+          </div> 
 				</div>
-				<div class="slide aspect-square w-72 h-full flex-shrink-0 snap-center rounded overflow-hidden">
-					<img class="w-full h-full object-cover" src="https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mountain_image">
-				</div>  
+
+				<div class="slide aspect-square w-72 h-full flex-shrink-0 snap-center rounded overflow-hidden"> 
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"> 
+            <img class="rounded-t-lg " src="/dist/img/dior.jpg" alt="" /> 
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">Deluxe</h5>
+                </a>
+                <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">Tray Romantic Dior. </p>
+                <div class="pb-1">
+                  <span class=" text-xl font-extrabold  dark:text-white">Rp.50.000</span>
+                  <span class=" text-gray-500 dark:text-gray-400">/Box</span>
+              </div>  
+            </div>
+          </div> 
+				</div>
+
+        <div class="slide aspect-square w-72 h-full flex-shrink-0 snap-center rounded overflow-hidden"> 
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"> 
+            <img class="rounded-t-lg " src="/dist/img/crystal.jpg" alt="" /> 
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">Luxury</h5>
+                </a>
+                <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">Tray Romantic Crystal. </p>
+                <div class="pb-1">
+                  <span class=" text-xl font-extrabold  dark:text-white">Rp.60.000</span>
+                  <span class=" text-gray-500 dark:text-gray-400">/Box</span>
+              </div>  
+            </div>
+          </div> 
+				</div>
+
 			</div> 
 		</div>
 	</div> 
- 
+  <!-- Paket Section end -->
+
 
  <!-- Testimoni Section Start -->
-  <section id="testimoni" class="bg-slate-800 pt-8 pb-1 dark:bg-slate-300">
+  <section id="testimoni" class="bg-slate-100 pt-8 pb-1 dark:bg-slate-300">
     <div class="container">
       <div class="w-full px-4">
         <div class="mx-auto mb-16 text-center">
           <h4 class="mb-2 text-lg font-semibold text-primary">Testimoni</h4>
-          <h2 class="mb-6 text-2xl font-bold text-white dark:text-dark sm:text-2xl lg:text-5xl">Apa kata mereka, tentang
+          <h2 class="mb-6 text-2xl font-bold text-dark dark:text-dark sm:text-2xl lg:text-5xl">Apa kata mereka, tentang
             Seserahanideaku ?</h2>
             <!-- container-testimoni -->
             <div class="grid gap-6 text-center md:grid-cols-3">
                 <div>
                   <div
                     class=" dark:text-white block rounded-lg bg-white shadow-lg dark:bg-slate-800 dark:shadow-black/30">
-                    <div class="h-20 overflow-hidden rounded-t-lg bg-[#9d789b]"></div>
+                    <div class="h-20 overflow-hidden rounded-t-lg bg-pink-200"></div>
                     <div
                       class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
                       <img
@@ -288,69 +349,6 @@
   </section>
  <!-- Testimoni End -->
  
-
-<!-- Tema Section Start -->  
-  <section id="tema" class="bg-slate-100 pt-12 pb-4 dark:bg-dark">
-    <div class="container">          
-      <div class="w-full px-4">
-        <div class="mx-auto mb-12 max-w-xl text-center">
-          <h4 class="mb-2 text-lg font-semibold text-primary">Tema</h4>
-          <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Explore Tema</h2>
-          <p class="text-md font-medium text-secondary md:text-lg">Kami Menghadirkan berbagai pilihan tema yang cocok untuk kamu</p>
-        </div>
-      </div>
- 
-      <div class="flex flex-wrap">
-        <!-- Romance -->
-        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 dusunCardContainer">
-          <div class="dusunCard">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 front">
-              <img src="dist/img/modern1.jpg" alt="Programming" class="w-full" />
-              <div class="pt-4 pb-3 px-6">
-                <h3>
-                  <a href="#"
-                    class="mb-1 block truncate text-xl font-bold text-dark hover:text-primary dark:text-white">Romantic</a>
-                </h3>
-                <p class="mb-1 text-base font-medium text-secondary">Menghadirkan nuansa romantis yang dipenuhi dengan bunga yang indah</p>
-              </div>
-            </div> 
-          </div>
-        </div>
-
-        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 dusunCardContainer">
-            <div class="dusunCard">
-              <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 front">
-                <img src="dist/img/modern.jpg" alt="Programming" class="w-full" />
-                <div class="pt-4 pb-3 px-6">
-                  <h3>
-                    <a href="#"
-                      class="mb-1 block truncate text-xl font-bold text-dark hover:text-primary dark:text-white">Modern</a>
-                  </h3>
-                  <p class="mb-1 text-base font-medium text-secondary">Menghadirkan tampilan modern dan minimalis yang dibungkus dengan sangkar </p>
-                </div>
-              </div> 
-            </div>
-          </div>
-
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3 dusunCardContainer">
-            <div class="dusunCard">
-              <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 front">
-                <img src="dist/img/elean.jpg" alt="Programming" class="w-full" />
-                <div class="pt-4 pb-3 px-6">
-                  <h3>
-                    <a href="#"
-                      class="mb-1 block truncate text-xl font-bold text-dark hover:text-primary dark:text-white">Elegant</a>
-                  </h3>
-                  <p class="mb-1 text-base font-medium text-secondary">Menghadirkan nuansa elegant dan simple yang memberikan kesan penuh makna</p>
-                </div>
-              </div> 
-            </div>
-          </div> 
-      </div>
-    </div>
-  </section>
-<!-- Tema End -->  
-
 
 <!-- galery Section Start -->
   <section id="galery" class="pt-10 pb-10 px-4 "> 
@@ -394,7 +392,7 @@
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
         </div>
         <!-- Slider controls -->
-        <button type="button" class="absolute top-0 left-0 -z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <!-- <button type="button" class="absolute top-0 left-0 -z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
             <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                 <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                 <span class="sr-only">Previous</span>
@@ -405,11 +403,113 @@
                 <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 <span class="sr-only">Next</span>
             </span>
-        </button>
+        </button> -->
       </div> 
     </div> 
   </section>
 <!-- galery end -->  
+
+<!-- Ketentuan Section Start -->  
+  <section id="ketentuan" class="bg-slate-100 pt-10 pb-10 dark:bg-dark">
+    <div class="container">          
+      <div class="w-full px-4">
+        <div class="mx-auto mb-6 max-w-xl text-center">
+          <h4 class="mb-2 text-lg font-semibold text-primary">Informasi</h4>
+          <h2 class="mb-2 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Syarat & Ketentuan</h2>
+          <p class="text-md font-medium text-secondary md:text-lg">Terdapat beberapa syarat dan Ketentuan untuk diketadui sebelum melakukan Pemesanan</p>
+        </div>
+      </div>
+            
+      <div id="accordion-open" data-accordion="open">
+        <h2 id="accordion-open-heading-1">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls="accordion-open-body-1">
+            <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg> Syarat Pemesanan</span>
+            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+        </h2>
+        <div id="accordion-open-body-1" class="hidden" aria-labelledby="accordion-open-heading-1">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">⭐ Setiap pemesanan harus melakukan Booking terlebih dahulu, dengan minimal DP 20%.</p>
+            <p class="text-gray-500 dark:text-gray-400">⭐ Booking dilakukan minimal satu minggu sebelum acara.</p>
+          </div>
+        </div>
+        <h2 id="accordion-open-heading-2">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-open-body-2" aria-expanded="false" aria-controls="accordion-open-body-2">
+            <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>Ketentuan Pesanan</span>
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+        </h2>
+        <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">⭐ Apabila terjadi pembatalan pesanan, DP yang sudah masuk tidak dapat dikembalikan.</p>
+            <p class="mb-2 text-gray-500 dark:text-gray-400">⭐ Properti seperti bunga-bunga, box dan akrilik hanya disewakan saja, penyewa wajib mengembalikan H+1 dari acara.</p>
+            <p class="mb-2 text-gray-500 dark:text-gray-400">⭐ Kehilangan dan kerusakan pada properti (tray/box) saat sewa dikenakan biaya ganti, tergantung dengan nilai properti.</p>
+            <p class="mb-2 text-gray-500 dark:text-gray-400">⭐ Keterlambatan pengembalian properti akan dikenakan biaya 50rb/perhari.</p>
+          </div>
+        </div>
+        <h2 id="accordion-open-heading-3">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-open-body-3" aria-expanded="false" aria-controls="accordion-open-body-3">
+            <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg> Syarat dan Ketentuan umum</span>
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+        </h2>
+        <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3">
+          <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"> 
+            <p class="mb-2 text-gray-500 dark:text-gray-400">✅ Dengan memesan/menyewa jasa dari @Seserahanideaku berarti memahami dan menyetujui segala syarat dan ketentuan yang berlaku.</p> 
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <div class="flex flex-wrap"> 
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 dusunCardContainer">
+          <div class="dusunCard">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 front">
+              <img src="dist/img/modern1.jpg" alt="Programming" class="w-full" />
+              <div class="pt-4 pb-3 px-6">
+                <h3>
+                  <a href="#"
+                    class="mb-1 block truncate text-xl font-bold text-dark hover:text-primary dark:text-white">Romantic</a>
+                </h3>
+                <p class="mb-1 text-base font-medium text-secondary">Menghadirkan nuansa romantis yang dipenuhi dengan bunga yang indah</p>
+              </div>
+            </div> 
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 dusunCardContainer">
+            <div class="dusunCard">
+              <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 front">
+                <img src="dist/img/modern.jpg" alt="Programming" class="w-full" />
+                <div class="pt-4 pb-3 px-6">
+                  <h3>
+                    <a href="#"
+                      class="mb-1 block truncate text-xl font-bold text-dark hover:text-primary dark:text-white">Modern</a>
+                  </h3>
+                  <p class="mb-1 text-base font-medium text-secondary">Menghadirkan tampilan modern dan minimalis yang dibungkus dengan sangkar </p>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3 dusunCardContainer">
+            <div class="dusunCard">
+              <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 front">
+                <img src="dist/img/elean.jpg" alt="Programming" class="w-full" />
+                <div class="pt-4 pb-3 px-6">
+                  <h3>
+                    <a href="#"
+                      class="mb-1 block truncate text-xl font-bold text-dark hover:text-primary dark:text-white">Elegant</a>
+                  </h3>
+                  <p class="mb-1 text-base font-medium text-secondary">Menghadirkan nuansa elegant dan simple yang memberikan kesan penuh makna</p>
+                </div>
+              </div> 
+            </div>
+          </div>  -->
+      </div>
+    </div>
+  </section>
+<!-- Ketentuan End -->  
 
 
  <!-- Map Section Start -->
