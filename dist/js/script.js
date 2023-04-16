@@ -52,3 +52,7 @@ window.onscroll = function () {
   } else {
     darkToggle.checked = false;
   }
+
+
+  //carousel 
+ 
