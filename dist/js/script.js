@@ -14,6 +14,8 @@ window.onscroll = function () {
       toTop.classList.add('hidden');
     }
   };
+
+  
   
   // Hamburger
   const hamburger = document.querySelector('#hamburger');
