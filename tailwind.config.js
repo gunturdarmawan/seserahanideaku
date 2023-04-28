@@ -6,7 +6,7 @@ module.exports = {
       center: true,
       padding: '16px',
     },
-    extend: {
+    extend: { 
       fontFamily:{
          customfont :  "'Sacramento', cursive",   
       },  

@@ -302,6 +302,8 @@
 			</div> 
 		</div> 
   </div> 
+
+  <!-- paket tambahan -->
   <div id="app" class="max-w-screen-lg mx-auto md:px-8 pb-4 pt-2 dark:bg-dark transition-all duration-500 ease-linear">
 		<div class="w-full px-4">
       <div class="mx-auto mb-6 max-w-xl text-center"> 
@@ -562,15 +564,14 @@
  
 
 <!-- galery Section Start -->
-  <section id="galery" class="pt-10 pb-10 px-4 dark:bg-dark"> 
-    <div class="container">
+  <section id="galery" class="pt-10 pb-10 px-4 dark:bg-dark">  
         <div class="w-full px-4">
             <div class="mx-auto mb-8 max-w-xl text-center">
               <h4 class="mb-2 text-lg font-semibold text-primary">Galery</h4>
               <h2 class="mb-2 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Explore Galery</h2>
               <p class="text-md font-medium text-secondary md:text-lg">Setiap Seserahan memiliki moment & memory di dalamnya, pastikan kamu memilih yang terbaik.</p>
             </div>
-            <div id="default-carousel" class="relative w-full " data-carousel="slide">
+            <div id="default-carousel" class="relative w" data-carousel="slide">
               <!-- Carousel wrapper -->
               <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                    <!-- Item 1 -->
@@ -618,10 +619,36 @@
                       <span class="sr-only">Next</span>
                   </span>
               </button>
-          </div>
+          </div> 
+          
     </div> 
   </section>
+
+  <div id="app" class="max-w-screen-lg mx-auto md:px-8 pb-2 dark:bg-dark transition-all duration-500 ease-linear">
+    <div class="w-full px-4">
+      <div class="mx-auto mb-6 max-w-xl text-center"> 
+        <h2 class="mb-2 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Short Videos</h2>
+        <p class="px-6 text-md font-medium text-secondary md:text-lg">Tersedia tambahan paket yang mungkin kamu suka</p>
+      </div>
+    </div>  
+
+    <!-- content --> 
+		<div class="relative">
+			<div class="slides-container mb-12  flex snap-x snap-mandatory  overflow-x-auto space-x-4 scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
+ 
+			 
+        <video id="video" class="snap-center rounded-md" src=" dist/video/ero-video.mp4" type="video/mp4" width = "260"    muted loop playsinline></video> 
+  
+        <video id="videoo" class="snap-center rounded-md" src=" dist/video/ero-video.mp4" type="video/mp4" width = "260"   muted loop playsinline></video> 
+ 
+        <video id="videooo" class="snap-center rounded-md"  src=" dist/video/ero-video.mp4"  type="video/mp4"width = "260"    muted loop playsinline></video>
+  
+
+			</div> 
+		</div> 
+  </div> 
 <!-- galery end -->  
+ 
 
 <!-- Ketentuan Section Start -->  
   <section id="ketentuan" class="bg-slate-100 pt-10 pb-10 dark:bg-dark">
@@ -851,11 +878,12 @@
     id="to-top">
     <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
   </a>
-
+ 
 <!-- Script Link  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
   <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
   <script src="dist/js/script.js"></script>
-    
+
+ 
 </body>
 </html>

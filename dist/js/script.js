@@ -1,4 +1,58 @@
-// Navbar Fixed
+ if (!!window.IntersectionObserver) {
+  let video =  document.querySelector('#video');
+
+  let observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio != 1 && !video.paused) {
+          video.pause();
+        } else {
+          video.play();
+        }
+      });
+    },
+    { threshold: 1 }
+  );
+  observer.observe(video);
+}  
+
+if (!!window.IntersectionObserver) {
+  let video =  document.querySelector('#videoo');
+
+  let observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio != 1 && !video.paused) {
+          video.pause();
+        } else {
+          video.play();
+        }
+      });
+    },
+    { threshold: 1 }
+  );
+  observer.observe(video);
+}  
+
+if (!!window.IntersectionObserver) {
+  let video =  document.querySelector('#videooo');
+
+  let observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio != 1 && !video.paused) {
+          video.pause();
+        } else {
+          video.play();
+        }
+      });
+    },
+    { threshold: 1 }
+  );
+  observer.observe(video);
+}  
+ 
+ 
 window.onscroll = function () {
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
@@ -57,4 +111,3 @@ window.onscroll = function () {
 
 
   //carousel 
- 
