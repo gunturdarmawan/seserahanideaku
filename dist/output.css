@@ -1046,8 +1046,16 @@ input[type="range"]::-ms-fill-lower {
   margin-bottom: 2rem;
 }
 
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
 }
 
 .mr-2 {
@@ -1068,10 +1076,6 @@ input[type="range"]::-ms-fill-lower {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .mt-8 {
@@ -1142,6 +1146,10 @@ input[type="range"]::-ms-fill-lower {
   height: 100vh;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -1192,10 +1200,6 @@ input[type="range"]::-ms-fill-lower {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-screen-lg {
-  max-width: 1024px;
 }
 
 .max-w-screen-xl {
@@ -1318,10 +1322,6 @@ input[type="range"]::-ms-fill-lower {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
-.self-center {
-  align-self: center;
 }
 
 .overflow-hidden {
@@ -1580,10 +1580,6 @@ input[type="range"]::-ms-fill-lower {
   padding-bottom: 3rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1634,10 +1630,6 @@ input[type="range"]::-ms-fill-lower {
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pt-36 {
-  padding-top: 9rem;
 }
 
 .pt-4 {
@@ -1831,12 +1823,6 @@ input[type="range"]::-ms-fill-lower {
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2193,10 +2179,6 @@ body {
     height: 24rem;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
   .md\:w-1\/3 {
     width: 33.333333%;
   }
@@ -2236,11 +2218,6 @@ body {
     margin: auto;
   }
 
-  .lg\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .lg\:mb-16 {
     margin-bottom: 4rem;
   }
@@ -2261,96 +2238,24 @@ body {
     display: none;
   }
 
-  .lg\:h-72 {
-    height: 18rem;
+  .lg\:h-1\/2 {
+    height: 50%;
   }
 
   .lg\:h-80 {
     height: 20rem;
   }
 
-  .lg\:h-1\/2 {
-    height: 50%;
-  }
-
   .lg\:w-1\/2 {
     width: 50%;
-  }
-
-  .lg\:w-10 {
-    width: 2.5rem;
-  }
-
-  .lg\:w-80 {
-    width: 20rem;
-  }
-
-  .lg\:w-1\/3 {
-    width: 33.333333%;
-  }
-
-  .lg\:w-9\/12 {
-    width: 75%;
-  }
-
-  .lg\:w-96 {
-    width: 24rem;
-  }
-
-  .lg\:w-32 {
-    width: 8rem;
-  }
-
-  .lg\:w-40 {
-    width: 10rem;
-  }
-
-  .lg\:w-2\/4 {
-    width: 50%;
-  }
-
-  .lg\:w-auto {
-    width: auto;
-  }
-
-  .lg\:w-52 {
-    width: 13rem;
-  }
-
-  .lg\:w-72 {
-    width: 18rem;
-  }
-
-  .lg\:w-2\/3 {
-    width: 66.666667%;
-  }
-
-  .lg\:w-1\/12 {
-    width: 8.333333%;
   }
 
   .lg\:max-w-full {
     max-width: 100%;
   }
 
-  .lg\:place-content-center {
-    place-content: center;
-  }
-
-  .lg\:items-center {
-    align-items: center;
-  }
-
   .lg\:justify-center {
     justify-content: center;
-  }
-
-  .lg\:justify-items-center {
-    justify-items: center;
-  }
-
-  .lg\:self-center {
-    align-self: center;
   }
 
   .lg\:rounded-none {
@@ -2361,8 +2266,9 @@ body {
     background-color: transparent;
   }
 
-  .lg\:p-10 {
-    padding: 2.5rem;
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:px-12 {
@@ -2370,24 +2276,14 @@ body {
     padding-right: 3rem;
   }
 
-  .lg\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .lg\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .lg\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .lg\:pt-8 {
@@ -2427,10 +2323,6 @@ body {
 
   .xl\:w-1\/3 {
     width: 33.333333%;
-  }
-
-  .xl\:w-10\/12 {
-    width: 83.333333%;
   }
 
   .xl\:w-2\/4 {

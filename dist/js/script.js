@@ -51,6 +51,25 @@ if (!!window.IntersectionObserver) {
   );
   observer.observe(video);
 }  
+
+if (!!window.IntersectionObserver) {
+  let video =  document.querySelector('#videoooo');
+
+  let observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio != 1 && !video.paused) {
+          video.pause();
+        } else {
+          video.play();
+        }
+      });
+    },
+    { threshold: 1 }
+  );
+  observer.observe(video);
+}  
+ 
  
  
 window.onscroll = function () {
