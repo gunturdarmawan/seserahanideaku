@@ -1146,10 +1146,6 @@ input[type="range"]::-ms-fill-lower {
   height: 100vh;
 }
 
-.h-60 {
-  height: 15rem;
-}
-
 .min-h-full {
   min-height: 100%;
 }
@@ -1568,6 +1564,11 @@ input[type="range"]::-ms-fill-lower {
   padding-bottom: 2rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1650,6 +1651,18 @@ input[type="range"]::-ms-fill-lower {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
 }
 
 .text-left {
