@@ -1,74 +1,29 @@
- if (!!window.IntersectionObserver) {
-  let video =  document.querySelector('#video');
+function observeVideo(videoId) {
+  if (!!window.IntersectionObserver) {
+    let video = document.querySelector(`#${videoId}`);
 
-  let observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.intersectionRatio != 1 && !video.paused) {
-          video.pause();
-        } else {
-          video.play();
-        }
-      });
-    },
-    { threshold: 1 }
-  );
-  observer.observe(video);
-}  
+    let observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio != 1 && !video.paused) {
+            video.pause();
+          } else {
+            video.play();
+          }
+        });
+      },
+      { threshold: 1 }
+    );
 
-if (!!window.IntersectionObserver) {
-  let video =  document.querySelector('#videoo');
+    observer.observe(video);
+  }
+}
 
-  let observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.intersectionRatio != 1 && !video.paused) {
-          video.pause();
-        } else {
-          video.play();
-        }
-      });
-    },
-    { threshold: 1 }
-  );
-  observer.observe(video);
-}  
-
-if (!!window.IntersectionObserver) {
-  let video =  document.querySelector('#videooo');
-
-  let observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.intersectionRatio != 1 && !video.paused) {
-          video.pause();
-        } else {
-          video.play();
-        }
-      });
-    },
-    { threshold: 1 }
-  );
-  observer.observe(video);
-}  
-
-if (!!window.IntersectionObserver) {
-  let video =  document.querySelector('#videoooo');
-
-  let observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.intersectionRatio != 1 && !video.paused) {
-          video.pause();
-        } else {
-          video.play();
-        }
-      });
-    },
-    { threshold: 1 }
-  );
-  observer.observe(video);
-}  
+// Panggil fungsi observeVideo dengan ID video yang berbeda
+observeVideo('video');
+observeVideo('videoo');
+observeVideo('videooo');
+observeVideo('videoooo');
  
  
  
